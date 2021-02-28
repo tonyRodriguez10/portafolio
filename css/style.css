@@ -1,0 +1,90 @@
+@charset "UTF-8";
+* {
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.start{
+    background-color: #343a40;
+}
+.title{
+    margin-top: 10%;
+    margin-left: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+}
+.fast-description{
+    margin-left: 5%;
+    width: 50%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+}
+.about-container{
+    background-color: black;
+}
+.about-title, .about-text{
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+}
+.about-title{
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.about-description{
+    margin-right: 5%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.workArea-container{
+    background-color: #343a40;
+}
+.workArea-title{
+    text-align: center;
+}
+.skills-container{
+    background-color: black;
+}
+.soft-skills, .hard-skills{
+    width: 50%;
+    text-align: center;
+}
+.soft-skills-container,.hard-skills-container{
+    display: none;
+}
+.languages-container{
+    background-color: #343a40;
+}
+.languages-title{
+    text-align: center;
+}
+.languages-detail{
+    text-align: center;
+}
+.work-container{
+    background-color: black;
+}
+.work-row{
+    text-align: center;
+}
+.experience_single_item {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #5a5a5a;
+}
+.about_wrap{
+    background-color: #343a40;
+    padding: 120px 0 130px;
+}
+.contact_wrap{
+    background-color: black;
+    padding: 120px 0 130px;
+    text-align: center;
+}
+.con_info_menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
