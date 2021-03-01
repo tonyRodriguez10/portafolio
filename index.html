@@ -14,8 +14,7 @@
     <script src="https://kit.fontawesome.com/d52d3f4212.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- main -->
-    <section id="main">
+      <header>
         <!-- navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark nav">
             <div class="container">
@@ -27,18 +26,21 @@
                 <div class="navbar-nav">
                   <ul>
                     <li><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
-                    <li><a class="nav-link" href="#">Sobre mi</a></li>
-                    <li><a class="nav-link" href="#">Areas</a></li>
-                    <li><a class="nav-link" href="#">Skills</a></li>
-                    <li><a class="nav-link" href="#">Idiomas</a></li>
-                    <li><a class="nav-link" href="#">Experiencia</a></li>
-                    <li><a class="nav-link" href="#">Logros</a></li>
-                    <li><a class="nav-link" href="#">Contacto</a></li>
+                    <li><a class="nav-link" href="#about">Sobre mi</a></li>
+                    <li><a class="nav-link" href="#work-areas">Areas</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#languages">Idiomas</a></li>
+                    <li><a class="nav-link" href="#work-experience">Experiencia</a></li>
+                    <li><a class="nav-link" href="#studies">Logros</a></li>
+                    <li><a class="nav-link" href="#contact">Contacto</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </nav>
+      </header>
+      <!-- main -->
+    <section id="start">
             <div class="container-fluid d-flex start">
               <div class="container">
                 <div class="row">
@@ -46,7 +48,6 @@
                       <!-- Hola -->
                       <h1 class="myname-title">Hola! Soy Anthony</h1>
                       <p class="myname-fast-description">Desarrollador web backend & frontend, técnico informática en redes, soporte técnico, mucho gusto!.</p>
-                      <div class="social"><a href="https://www.linkedin.com/in/anthony-yeran-rodr%C3%ADguez-mu%C3%B1oz-3bb768196/"<i class="fab fa-linkedin-in"></i></a></div>
                   </div>
                   <div class="col-md-7 personal-img">
                       <img src="images/personaPhoto.png" style="max-width:43%;width:auto;height:auto;">
@@ -56,11 +57,11 @@
             </div>
     </section>
     <!-- about me -->
-    <section id="about">
+    <section id="about" >
       <div class="container-fluid d-flex about-container">
         <div class="container">
           <div class="row">
-            <div class="col-md-5 about-title">
+            <div  class="col-md-5 about-title">
               <!-- about title -->  
                 <h2 class="font-about_title">Sobre mi</h2>
             </div>
@@ -114,7 +115,7 @@
           <div class="row">
             <div class="col-6">
               <h2 class="skills-title">Soft-skills</h2>
-              <button id="soft-skill--btn" class="btn btn-outline-warning mt-3">Ver</button>
+              <button id="soft-skill--btn" class="btn btn-outline-warning m-3">Ver</button>
               <div class="soft-skills-container mt-2">
                 <p><strong class="strong-font">✔</strong> Aprendizaje rápido. <br>
                   <strong class="strong-font">✔</strong> Flexibilidad. <br>
@@ -126,7 +127,7 @@
             </div>
             <div class="col-6">
               <h2 class="skills-title">Hard-skills</h2>
-              <button id="hard-skill--btn" class="btn btn-outline-warning mt-3">Ver</button>
+              <button id="hard-skill--btn" class="btn btn-outline-warning m-3">Ver</button>
               <div class="hard-skills-container mt-2">
                 <p>
                   <strong class="strong-font">Conocimiento intermedio</strong><br>
@@ -212,53 +213,75 @@
     <!-- work experience -->
     <section id="work-experience">
       <div class="container-fluid d-block work-container">
-            <!-- work title -->
-            <div class="work-title">   
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero necessitatibus praesentium, architecto libero officia quos soluta natus saepe in explicabo, reprehenderit, dignissimos voluptatibus. Culpa corporis qui ea natus placeat?</h2>
+        <div class="container">
+          <div class="row workExp-title p-3">
+            <h2>Experiencia laboral</h2>
+          </div>
+          <div class="row pb-3">
+            <div class="col-4 experience_single_item ">
+              <p>Noviembre, 2021 - Diciembre, 2021. <br>
+                <strong class="strong-font">Desarrollador PHP full stack. <br>
+                Avalsoft</strong> <br><br>
+                2 meses realizando labores básicas en backend, frontend y base de datos MySql.
+                (HTML5, Laravel, JQuery, Bootstrap)
+              </p>
             </div>
-              <div class="work-row">
-                <div class="row">
-                  <div class="col-4 experience_single_item ">
-                    exp 1
-                  </div>
-                  <div class="col-4 experience_single_item ">
-                    exp 2
-                  </div>
-                  <div class="col-4 experience_single_item ">
-                    exp 3
-                  </div>
-                </div>
-              </div> 
+            <div class="col-4 experience_single_item ">
+              <p>Abril, 2015 - Febrero, 2016. <br>
+                <strong class="strong-font">Soporte técnico en sitio. <br>
+                Intersoft Latinoamérica</strong> <br><br>
+                10 meses realizando labores de soporte técnico nivel 1 & 2 y servicio al cliente.
+              </p>
+            </div>
+            <div class="col-4 experience_single_item ">
+              <p>Septiembre, 2014 - Noviembre, 2014. <br>
+                <strong class="strong-font">Practica supervisada colegial. <br>
+                Repretel</strong> <br><br>
+                2 meses realizando labores de soporte técnico nivel 1 , diagnóstico, inventario y reparación de equipos.
+              </p>
+            </div>
+          </div>
+        </div>
       </div> 
     </section>
-    <section id="studies" class="about_wrap">
+    <section id="studies" class="studies_wrap">
       <div class="container">
         <div class="row d_flex">
-          <div class="col-sm-5 col-xs-12">hola</div>
-          <div class="col-sm-7 col-xs-12 about_content">
-            <p>U</p>
-            <p>CISCO</p>
-            <p>Cole</p>
-            <p>Libre office</p>
-            <p>Tecnico medio</p>
-            <p>Bachil cole</p>
+          <div class="col-sm-5 about-title">
+            <h2 class="font-about_title">Estudios obtenidos</h2>
+          </div>
+          <div class="col-sm-7">
+            <strong class="strong-font">✔</strong> Bachillerato universitario informática empresarial, Universidad de Costa Rica (2020) <br>
+            <strong class="strong-font">✔</strong> Cisco CCNA 1, CTP Ulloa (2013) <br>
+            <strong class="strong-font">✔</strong> Cisco CCNA 2, CTP Ulloa (2013) <br>
+            <strong class="strong-font">✔</strong> Cisco CCNA 3, CTP Ulloa (2014) <br>
+            <strong class="strong-font">✔</strong> Cisco CCNA 4, CTP Ulloa (2014) <br>
+            <strong class="strong-font">✔</strong> Cisco IT Essentials, CTP Ulloa (2012) <br>
+            <strong class="strong-font">✔</strong> Tecnico medio informática en redes, CTP Ulloa (2014) <br>
+            <strong class="strong-font">✔</strong> Bachillerato educación media, CTP Ulloa (2014) <br>
           </div>
         </div>
       </div>
     </section>
     <section id="contact" class="contact_wrap">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5"><h2>CONTACT ME</h2></div>
+      <div class="container d-block">
+        <div class="row contact-title p-2">
+          <h2>Contacto</h2>
         </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <ul class="con_info_menu">
-              <li>Correo</li>
-              <li>telefono</li>
-              <li>LinkedIn</li>
+        <div class="row contact-description">
+            <ul>
+              <li class="con_info_menu"><div class="correo"><i class="fas fa-envelope-square" style="font-size: 150%;"></i> anthony.rodriguezmunoz@ucr.ac.cr <br>arodriguezmunoz1996@gmail.com</div></li>
+              <li class="con_info_menu"><div class="telefono"><i class="fas fa-phone-square-alt" style="font-size: 150%;"></i> +506 7045-3733</div></li>
+              <li class="con_info_menu"><div class="linkedin"><a href="https://www.linkedin.com/in/anthony-yeran-rodr%C3%ADguez-mu%C3%B1oz-3bb768196/"><i class="fab fa-linkedin-in style="font-size: 150%;""></i></a></div></li>
             </ul>
-          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer" class="footer_wrap">
+      <div class="container">
+        <div class="row footer-img">
+          <a href="#"><img src="images/specialLogo.jpg" style="max-width:25%;width:auto;height:auto;margin-left: 5%;"></a>
+          <p>Copyright © 2021<strong class="strong-font"> Created by Anthony Rodríguez Muñoz.</strong> </p>
         </div>
       </div>
     </section>

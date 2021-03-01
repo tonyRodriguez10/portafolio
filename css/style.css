@@ -4,6 +4,15 @@ font-family: 'Poppins', sans-serif;
   font-size: 20px;
   color: white;
 }
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  /*position: fixed;
+  z-index: 100;*/
+}
+.start{
+    padding-top: 5%;
+}
 .nav,.start{
     background-color: #2b2c2c;
 }
@@ -151,30 +160,54 @@ li{
     display: block;
   }
 
-
-
 .work-container{
-    background-color: black;
+    background-color: #313131;
 }
-.work-row{
-    text-align: center;
+.workExp-title{
+    text-decoration: underline #ffc300;
+    text-decoration-style: wavy;
+    justify-content: center;
 }
 .experience_single_item {
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-color: #5a5a5a;
+    padding-top: 3%;
 }
-.about_wrap{
-    background-color: #343a40;
+
+.experience_single_item:hover{
+    background-color: black;
+}
+.studies_wrap{
+    background-color: #2b2c2c;
     padding: 120px 0 130px;
 }
 .contact_wrap{
-    background-color: black;
-    padding: 120px 0 130px;
-    text-align: center;
+    background-color: #313131;
+    justify-content: center;
+}
+.contact-title{
+    text-decoration: underline #ffc300;
+    text-decoration-style: wavy;
+    justify-content: center;
+}
+.contact-description{
+    justify-content: center;
 }
 .con_info_menu{
     margin: 0;
     padding: 0;
     list-style: none;
+    display: block;
+}
+.correo,.telefono,.linkedin{
+    padding-bottom: 2%;
+}
+.footer_wrap{
+    background-color: #2b2c2c;
+}
+.footer-img{
+    padding: 2%;
+    justify-content: center;
+    text-align: center;
 }
