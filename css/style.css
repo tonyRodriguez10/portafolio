@@ -151,7 +151,7 @@ li{
     display: none;
     width: 30%;
     height: auto;
-    text-align: justify;
+    text-align: initial;
     justify-content: center;
     background-color: black;
     padding-left: 2%;
