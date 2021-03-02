@@ -6,7 +6,14 @@ $(document).ready(function()
 		$("#hard-skill--btn").on( "click", function() {	 
 			$(".hard-skills-container").toggle();
 			 });
-			 $(function(){
-				$('.popup').load('https://es.theysay.me/ranking/111/');
-			  });
+			 
+		$("#spanish--btn").on( "click", function() {	 
+			$(".popup-spanish").toggle();
+			});
+		$("#english--btn").on( "click", function() {	 
+			$(".popup-english").toggle();
+			});
+		$("#portugues--btn").on( "click", function() {	 
+			$(".popup-portugues").toggle();
+			});
 	    });
