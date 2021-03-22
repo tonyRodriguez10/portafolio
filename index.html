@@ -16,81 +16,73 @@
 <body>
       <header>
         <!-- navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark nav">
+          <section class="navigation">
             <div class="container">
-              <div class="row logo">
-                <div class="col-3">
-                  <a href="#"><img class="navbar-brand" src="images/specialLogo.jpg"></a>
+              <nav>
+                <ul class="nav-menu">
+                  <li><a href="#inicio">Inicio</a></li>
+                  <li><a href="#about">Sobre mi</a></li>
+                  <li><a href="#work-areas">Areas</a>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#languages">Idiomas</a></li>
+                  <li><a href="#work-experience">Experiencia</a></li>
+                  <li><a href="#studies">Logros</a></li>
+                  <li><a href="#projects">Proyectos</a></li>
+                  <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <div class="nav-movil">
+                  <a id="nav-boton" href="#!">
+                    <span></span>
+                  </a>
                 </div>
-                <div class="col menu">
-                  <!-- <div class="collapse navbar-collapse mr-9 d-flex justify-content-end" id="navbarNavAltMarkup"> -->
-                    <div class="navbar-nav ">
-                      <ul>
-                        <li><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
-                        <li><a class="nav-link" href="#about">Sobre mi</a></li>
-                        <li><a class="nav-link" href="#work-areas">Areas</a></li>
-                        <li><a class="nav-link" href="#skills">Skills</a></li>
-                        <li><a class="nav-link" href="#languages">Idiomas</a></li>
-                        <li><a class="nav-link" href="#work-experience">Experiencia</a></li>
-                        <li><a class="nav-link" href="#studies">Logros</a></li>
-                        <li><a class="nav-link" href="#contact">Contacto</a></li>
-                      </ul>
-                    </div>
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
-          </nav>
+              </nav>
+          </div>
+          </section>
+          <a href=""></a>
       </header>
-      <!-- main -->
-    <section id="start">
-            <div class="container-fluid d-flex start">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-5">
-                      <!-- Hola -->
+      <!-- Introduction -->
+    <section id="Introduction" class="Introduction_wrap">
+              <div class="container-fluid d-flex Introduction-container">
+                <div class="container test">
+                  <div class="col-Introduction">
                       <h1 class="myname-title">Hola! Soy Anthony</h1>
-                      <p class="myname-fast-description">Desarrollador web backend & frontend, técnico informática en redes, soporte técnico, mucho gusto!.</p>
+                      <p class="myname-fast-description">Desarrollador web backend & frontend, técnico informática en redes, soporte técnico, mucho gusto..!</p>
                   </div>
-                  <div class="col-md-7 personal-img">
-                      <img src="images/personaPhoto.png" style="max-width:60%;width:auto;height:auto;">
+                  <div class="col-photo personal-img">
+                      <img src="images/personaPhoto.png" style="max-width: 90%;/* width:auto; */height: 85%;">
                   </div>
                 </div>    
               </div>
-            </div>
     </section>
     <!-- about me -->
-    <section id="about" >
-      <div class="container-fluid d-flex about-container">
-        <div class="container">
+    <section id="about" class="about_wrap">
+      <div class="container d-flex">
           <div class="row">
             <div  class="col-md-5 about-title">
               <!-- about title -->  
                 <h2 class="font-about_title">Sobre mi</h2>
             </div>
             <div class="col-md-7">
-              <p class="about-description">Enfocado en crecer como persona y como
+              <p class="about-description">En un entorno laboral, enfocado en crecer como persona y como
                 profesional con el objetivo de ayudar a mi familia y abrirme camino
                 dentro del entorno empresarial.<br>
                 Con una gran habilidad de aprendizaje rápido, capaz de encontrar soluciones en
                 situaciones de presión, con un gran sentido del compromiso,
-                de la responsabilidad y del valor ético.Siempre en constante perfeccionamiento de mis
+                de la responsabilidad y del valor ético. Siempre en constante perfeccionamiento de mis
                 habilidades y abierto para recibir comentarios constructivos en busca de pulir
-                mis habilidades en pro de la empresa que me brinde la oportunidad.</p>
+                mis habilidades en pro de la empresa que me brinde la oportunidad.<br><br>En un entorno personal, apasionado por la música, el deporte, el espacio y los idiomas.</p>
             </div>
           </div>
-        </div>
       </div> 
     </section>
     <!-- work areas -->
-    <section id="work-areas">
-      <div class="container-fluid d-flex flex-column workArea-container">
-        <div class="container">
+    <section id="work-areas" class="workArea_wrap">
+      <div class="container d-flex flex-column">
           <div class="row workArea-title">
             <h2>Areas de desempeño</h2>
           </div> 
           <div class="row workArea-description">
-            <p>Areas de la informática en las que me puedo desempeñar, siempre dispuesto a aprender y adentrarme en nuevas areas que se me requiera....</p>
+            <p>Áreas de la informática en las que me puedo desempeñar, siempre dispuesto a aprender y adentrarme en nuevas áreas que se me requiera....</p>
           </div>
           <div class="row work-area_img">
             <div class="col-5">
@@ -107,32 +99,36 @@
             <div class="col-5">
               <img src="images/dataBaseArea.png" style="border-radius: 20px;width:100%;height:100%;">
             </div>
-          </div>
-      </div> 
+          </div> 
     </div> 
     </section>
     <!-- skills -->
-    <section id="skills">
-      <div class="container-fluid d-flex skills-container">
-        <div class="container">
+    <section id="skills" class="skills_wrap">
+      <div class="container d-flex skills-container">
           <div class="row">
             <div class="col-6">
               <h2 class="skills-title">Soft-skills</h2>
               <button id="soft-skill--btn" class="btn btn-outline-warning m-3">Ver</button>
               <div class="soft-skills-container mt-2">
-                <p><strong class="strong-font">✔</strong> Aprendizaje rápido. <br>
+                <p class="font-skills">
+                  <strong class="strong-font">✔</strong> Aprendizaje rápido. <br>
                   <strong class="strong-font">✔</strong> Flexibilidad. <br>
-                  <strong class="strong-font">✔</strong> Trabajo bajo presión. <br>
+                  <strong class="strong-font">✔</strong> Excelente manejo de la presión. <br>
                   <strong class="strong-font">✔</strong> Buena y constante comunicación. <br>
                   <strong class="strong-font">✔</strong> Ingenio y perseverancia para resolver las cosas. <br>
+                  <strong class="strong-font">✔</strong> Entusiasmo. <br>
+                  <strong class="strong-font">✔</strong> Proactivo. <br>
+                  <strong class="strong-font">✔</strong> Aprendizaje visual. <br>
+                  <strong class="strong-font">✔</strong> Servicio al cliente. <br>
+                  <strong class="strong-font">✔</strong> Trabajo en equipo. <br>
                 </p>
               </div>
             </div>
             <div class="col-6">
-              <h2 class="skills-title">Hard-skills</h2>
+              <h3 class="skills-title">Hard-skills</h3>
               <button id="hard-skill--btn" class="btn btn-outline-warning m-3">Ver</button>
               <div class="hard-skills-container mt-2">
-                <p>
+                <p class="font-skills">
                   <strong class="strong-font">Conocimiento intermedio</strong><br>
                   <strong class="strong-font">✔</strong> Paquetes offices y libreOffice. <br>
                   <strong class="strong-font">✔</strong> CSS3. <br>
@@ -140,7 +136,8 @@
                   <strong class="strong-font">✔</strong> PHP (Symfony & Laravel). <br>
                   <strong class="strong-font">✔</strong> JQuery. <br>
                   <strong class="strong-font">Conocimiento básico</strong><br>
-                  <strong class="strong-font">✔</strong> C#. <br>
+                  <strong class="strong-font">✔</strong> C# (.NET Framework, ASP.NET). <br>
+                  <strong class="strong-font">✔</strong> C# (Entity framework, LinQ). <br>
                   <strong class="strong-font">✔</strong> Control de versiones (Git & Github). <br>
                   <strong class="strong-font">✔</strong> Bootstrap. <br>
                   <strong class="strong-font">✔</strong> Js. <br>
@@ -148,18 +145,17 @@
                   <strong class="strong-font">Conocimiento en: </strong><br>
                   <strong class="strong-font">✔</strong> POO paradigma. <br>
                   <strong class="strong-font">✔</strong> MVC estructura de programación. <br>
+                  <strong class="strong-font">✔</strong> N-Layer estructura de programación. <br>
                   <strong class="strong-font">✔</strong> SCRUM metodología ágil. <br>
                 </p>
               </div>
             </div>
           </div>
-        </div>
       </div> 
     </section>
     <!-- idiomas -->
-    <section id="languages">
-      <div class="container-fluid d-block languages-container">
-        <div class="container">
+    <section id="languages" class="languages_wrap">
+      <div class="container d-block">
           <div class="row languages-title">
             <h2>Idiomas</h2>
           </div>
@@ -210,43 +206,41 @@
                 </div>
               </div> 
             </div> 
-          </div>
         </div>
     </section>
     <!-- work experience -->
-    <section id="work-experience">
-      <div class="container-fluid d-block work-container">
-        <div class="container">
+    <section id="work-experience" class="work-experience_wrap">
+      <div class="container d-block">
           <div class="row workExp-title p-3">
             <h2>Experiencia laboral</h2>
           </div>
-          <div class="row pb-3">
-            <div class="col-4 experience_single_item ">
+          <div class="row pb-3 mobile-row">
+            <div class="col experience_single_item ">
               <p>Noviembre, 2020 - Diciembre, 2020. <br>
                 <strong class="strong-font">Desarrollador PHP full stack. <br>
                 Avalsoft</strong> <br><br>
-                2 meses realizando labores básicas en backend, frontend y base de datos MySql.
+                Contrato temporal, realizando labores básicas en backend, frontend y base de datos MySql.
                 (HTML5, Laravel, JQuery, Bootstrap)
               </p>
             </div>
-            <div class="col-4 experience_single_item ">
+            <div class="col experience_single_item ">
               <p>Abril, 2015 - Febrero, 2016. <br>
                 <strong class="strong-font">Soporte técnico en sitio. <br>
                 Intersoft Latinoamérica</strong> <br><br>
-                10 meses realizando labores de soporte técnico nivel 1 & 2 y servicio al cliente.
+                Realizando labores de soporte técnico nivel 1 & 2 y servicio al cliente.
               </p>
             </div>
-            <div class="col-4 experience_single_item ">
+            <div class="col experience_single_item ">
               <p>Septiembre, 2014 - Noviembre, 2014. <br>
                 <strong class="strong-font">Practica supervisada colegial. <br>
                 Repretel</strong> <br><br>
-                2 meses realizando labores de soporte técnico nivel 1 , diagnóstico, inventario y reparación de equipos.
+                Realizando labores de soporte técnico nivel 1 , diagnóstico, inventario y reparación de equipos.
               </p>
             </div>
           </div>
-        </div>
       </div> 
     </section>
+    <!-- studies -->
     <section id="studies" class="studies_wrap">
       <div class="container">
         <div class="row d_flex">
@@ -255,17 +249,70 @@
           </div>
           <div class="col-sm-7">
             <strong class="strong-font">✔</strong> Bachillerato universitario informática empresarial, Universidad de Costa Rica (2020) <br>
-            <strong class="strong-font">✔</strong> Cisco CCNA 1, CTP Ulloa (2013) <br>
-            <strong class="strong-font">✔</strong> Cisco CCNA 2, CTP Ulloa (2013) <br>
-            <strong class="strong-font">✔</strong> Cisco CCNA 3, CTP Ulloa (2014) <br>
-            <strong class="strong-font">✔</strong> Cisco CCNA 4, CTP Ulloa (2014) <br>
-            <strong class="strong-font">✔</strong> Cisco IT Essentials, CTP Ulloa (2012) <br>
             <strong class="strong-font">✔</strong> Tecnico medio informática en redes, CTP Ulloa (2014) <br>
             <strong class="strong-font">✔</strong> Bachillerato educación media, CTP Ulloa (2014) <br>
           </div>
         </div>
       </div>
     </section>
+    <!-- certifications -->
+    <section id="certifications" class="certifications_wrap">
+      <div class="container">
+        <div class="row d_flex">
+          <div class="col-sm-5 certifications-title">
+            <h2 class="font-certifications_title">Certificados obtenidos</h2>
+          </div>
+          <div class="col-sm-7">
+            <strong class="strong-font">✔</strong> Scrum Foundation Professional Certificate, Virtual (2021) <br>
+            <strong class="strong-font">✔</strong> Cisco CCNA 1, Fun.Omar Dengo (2013) <br>
+            <strong class="strong-font">✔</strong> Cisco CCNA 2, Fun.Omar Dengo (2013) <br>
+            <strong class="strong-font">✔</strong> Cisco CCNA 3, Fun.Omar Dengo (2014) <br>
+            <strong class="strong-font">✔</strong> Cisco CCNA 4, Fun.Omar Dengo (2014) <br>
+            <strong class="strong-font">✔</strong> Cisco IT Essentials, Fun.Omar Dengo (2012) <br>
+            <strong class="strong-font">✔</strong> Curso Básico Libre Office Impress, UTN(2012) <br>
+            <strong class="strong-font">✔</strong> Curso Básico Libre Office Writer, UTN(2012) <br>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects -->
+    <section id="projects" class="projects_wrap">
+      <div class="container d-flex flex-column">
+          <div class="row projects-title">
+            <h2>Proyectos personales.</h2>
+          </div> 
+          <div class="row projects-description">
+            <p>Proyectos propios que se encuentran actualmente en desarrollo o en entorno de producción....</p>
+          </div>
+          <div class="row row-mobile">
+            <div class="card" style="width: 17rem;margin: 2% 1%;">
+              <img class="card-img-top" src="images/logolaspalmas1.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title font-projects">Ducklin Web, Laravel (2021)</h5>
+                <p class="card-text font-projects">**EN PROGRESO<br />Migración de la app de C# a Laravel 8 con nueva funcionalidad de bot Telegram.</p>
+                <a href="#" class="btn  btn-warning">Ir al repositorio</a>
+              </div>
+            </div>
+            <div class="card" style="width: 17rem;margin: 2% 1%;">
+              <img class="card-img-top" src="images/tiorr.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title font-projects">TIORR, C# (2019)</h5>
+                <p class="card-text font-projects"><br />App de planilla de empleados basada en windows forms para supermercado en Quebrada Ganado, Jacó.</p>
+                <a href="#" class="btn  btn-warning">Ir al repositorio</a>
+              </div>
+            </div>
+            <div class="card" style="width: 17rem;margin: 2% 1%;">
+              <img class="card-img-top" src="images/ducklin.png" style="height: 338px;" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title font-projects">Ducklin App, C# (2018)</h5>
+                <p class="card-text font-projects"><br />App de venta y control de loteria basada en windows forms para pyme en La Uruca, San José.<br /><br /></p>
+                <a href="#" class="btn  btn-warning">Ir al repositorio</a>
+              </div>
+            </div>
+          </div>
+    </div> 
+    </section>
+    <!-- contact -->
     <section id="contact" class="contact_wrap">
       <div class="container d-block">
         <div class="row contact-title p-2">
@@ -280,6 +327,7 @@
         </div>
       </div>
     </section>
+    <!-- footer -->
     <section id="footer" class="footer_wrap">
       <div class="container">
         <div class="row footer-img">

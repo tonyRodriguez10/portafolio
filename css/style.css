@@ -1,40 +1,188 @@
 @charset "UTF-8";
 * {
-font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
 }
 header {
   background: rgba(0,0,0,0.9);
   width: 100%;
-  /*position: fixed;
-  z-index: 100;*/
 }
-.start{
-    padding-top: 1%;
-}
-.nav,.start{
-    background-color: #2b2c2c;
-}
-.navbar-brand{
-    width: 30%;
-}
-li{
+
+/*Section Navigation*/
+.navigation {
+    height: 70px;
+    background: #2b2c2c;
+  }
+  
+  nav {
+    float: right;
+    width:100%;
+  }
+
+  li{
     text-decoration: none;
-    display: inline-flex;
 }
-.nav-link{
-    font-size: 18px;
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background:#313131;
+  }
+  
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    color: #72e0d1;
     text-decoration: none;
     background-image: linear-gradient(yellow, red);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
-}
-.nav-link:hover, .nav-link:focus {
+  }
+  
+  nav ul li a:hover {
     background-size: 100% 2px;
-    color: red;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav ul li a:not(:only-child):after {
+    padding-left: 5px;
+    content: ' ▾';
+  }
+  
+  .nav-submenu {
+    width:auto;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: auto;
+    display: none;
+  }
+  
+  .nav-submenu li {
+     width: 100%;
+     white-space: nowrap;
+  }
+  
+  .nav-movil {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #2b2c2c;
+    height: 70px;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .nav-movil {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      margin-top: 70px;
+    }
+    
+    .nav-menu li {
+      float: none;
+    }
+    .nav-menu li a {
+      padding: 20px;
+      line-height: 20px;
+    }
+    .nav-menu li ul li a {
+      padding-left: 30px;
+    }
+    
+    .nav-submenu {
+      position: static;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .nav-menu {
+      display: block !important;
+    }  
+  }
+  
+  #nav-boton {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    cursor: pointer;
+    width:20px;
+    height: 10px;
+    padding: 5px 15px 15px 0px;
+    z-index:1;
+  }
+  
+  #nav-boton span,
+  #nav-boton span:after,
+  #nav-boton span:before {
+    transition: all 500ms ease-in-out;
+    border-radius: 1px;
+    height: 5px;
+    width: 40px;
+    position: absolute;
+    display: block;
+    content: "";
+    background: #fff;
+  }
+  
+  #nav-boton span:before {
+    top: -10px;
+  }
+  #nav-boton span:after {
+    bottom: -10px;
+  }
+  
+  #nav-boton.activo span {
+    background-color: transparent;
+  }
+  
+  #nav-boton.activo span:before,
+  #nav-boton.activo span:after {
+    top: 0;
+  }
+  
+  #nav-boton.activo span:after {
+    transform: rotate(-45deg);
+  }
+  
+  #nav-boton.activo span:before {
+    transform: rotate(45deg);
+  }
+  
+
+/*Section Introduction*/
+.Introduction_wrap{
+    background-color:#313131 ;
+}
+
+.Introduction,.Introduction-container{
+    padding-top: 1%;
+    background-color: #2b2c2c;
+}
+.test{
+    height: 22rem;
+    padding: 2% 0 2% 0%;
+    display: flex;
+}
+.col-Introduction{
+    width: 40%;
+}
+.col-photo{
+    width: 60%;
 }
 .personal-img{
     text-align: center;
@@ -51,7 +199,9 @@ li{
     font-size: 26px;
     padding-top: 20%;
 }
-.about-container{
+
+/*Section about me*/
+.about_wrap{
     background-color: #313131;
 }
 .about-title{
@@ -70,7 +220,9 @@ li{
     font-size: 18px;
     margin-top: 2%;
 }
-.workArea-container{
+
+/*Section Work area*/
+.workArea_wrap{
     background-color: #2b2c2c;
 }
 .workArea-title{
@@ -88,9 +240,12 @@ li{
     padding-bottom: 2%;
 }
 
-.skills-container{
+/*Section skills*/
+.skills_wrap{
     background-color: #313131;
-    text-align: center;
+}
+.skills-container{
+    justify-content: center;
 }
 .skills-title{
     text-decoration: underline #ffc300;
@@ -103,7 +258,9 @@ li{
 .strong-font{
     color:#ffc300
 }
-.languages-container{
+
+/*Section languages*/
+.languages_wrap{
     background-color: #2b2c2c;
 }
 .languages-title{
@@ -158,7 +315,8 @@ li{
     margin-top: 1%;;
   }
 
-.work-container{
+  /*Section experience*/
+.work-experience_wrap{
     background-color: #313131;
 }
 .workExp-title{
@@ -176,12 +334,53 @@ li{
 .experience_single_item:hover{
     background-color: black;
 }
+
+/*Section studies*/
 .studies_wrap{
     background-color: #2b2c2c;
     padding: 120px 0 130px;
 }
-.contact_wrap{
+
+/*Section certifications*/
+.certifications_wrap{
     background-color: #313131;
+    padding: 120px 0 130px;
+}
+
+.certifications-title{
+    text-decoration: underline #ffc300;
+    text-decoration-style: wavy;
+    justify-content: center;
+}
+.font-certifications_title{
+    font-size: 43px;
+}
+
+/*Section projects*/
+.projects_wrap{
+    background-color: #2b2c2c;
+}
+.projects-title{
+    text-decoration: underline #ffc300;
+    text-decoration-style: wavy;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom:2%;
+}
+.projects-description{
+    justify-content: center;
+}
+.font-projects{
+    color: #2b2c2c;
+    text-align: justify;
+}
+.row-mobile {
+    justify-content: center;
+}
+
+/*Section contact*/
+.contact_wrap{
+    background-color:#313131 ;
     justify-content: center;
 }
 .contact-title{
@@ -201,6 +400,8 @@ li{
 .correo,.telefono,.linkedin{
     padding-bottom: 2%;
 }
+
+/*Section footer*/
 .footer_wrap{
     background-color: #2b2c2c;
 }
@@ -215,25 +416,21 @@ li{
 
 /*Tablet*/
 @media (min-width: 576px) and (max-width: 991.98px) {
-    .logo{
-        display: inline-flex;
+    /*Section Introduction*/
+    .Introduction-container {
+        height: 25rem;
     }
-    .navbar-brand {
+    .test {
+        height: 22rem;
+        padding: 2% 0 2% 0%;
+        display: block !important;
+    }
+    .col-Introduction {
         width: 100%;
     }
-    .menu {
-        display: contents;
-    }
-    .navbar-nav {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-        width: 75%;
-        text-align: center;
+    .col-photo {
+        width: 100%;
+        height: 50%;
     }
     .myname-title{
         text-align: center;
@@ -242,16 +439,86 @@ li{
     .myname-fast-description{
         padding-top: 10%;
     }
+
+    /*Section About me*/
+
+    /*Section Work area*/
+    .workArea-title {
+        text-align: center;
+    }
+
+    /*Section Skills*/
+    .skills_wrap{
+        text-align: center;
+    }
     .soft-skills-container, .hard-skills-container {
         text-align: initial;
     }
+    .font-skills {
+        font-size: 17px;
+    }
+
+    /*Section Languages*/
     .popup {
         width: 42%;
     }
-    .studies_wrap {
-        padding-top: 1%;
-        padding-bottom: 3%;
+
+    /*Section Work Experience*/
+    .work-experience_wrap{
+        padding: 40px 0 40px;
     }
+    .workExp-title {
+        text-align: center;
+    }
+    .mobile-row {
+        display: inline-flex !important;
+    }
+    .experience_single_item:hover {
+        text-align: justify;
+    }
+
+    /*Section studies*/
+    .studies_wrap {
+        padding: 40px 0 40px;
+    }
+    .font-about_title {
+        font-size: 45px;
+    }
+
+    /*Section Certifications*/
+    .certifications_wrap {
+        padding: 40px 0 40px;
+    }
+    .font-certifications_title {
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    /*Section projects*/
+    .projects_wrap{
+        padding: 40px 0 40px;
+    }
+    .projects-title, .projects-description {
+        text-align: center;
+    }
+   
+    /*Section contact*/
+    .contact_wrap{
+        padding: 40px 0 40px;
+    }
+    .con_info_menu {
+        margin-left: -25px;
+    }
+    .correo, .telefono, .linkedin {
+        font-size: 17px;
+    }
+
+    /*Section footer*/
+    .footer_wrap{
+        padding: 40px 0 40px;
+    }
+
     .about-title {
         text-align: center;
     }
@@ -261,7 +528,7 @@ li{
 
 /*movil*/
 @media (max-width: 575.98px) {
-    .logo{
+    /* .logo{
         display: inline-flex;
     }
     .navbar-brand {
@@ -280,6 +547,25 @@ li{
         list-style: none;
         width: 75%;
         text-align: center;
+    } */
+
+    /*Section Introduction*/
+    .Introduction_wrap{
+        background-color: #2b2c2c;
+    }
+    .Introduction-container{
+        display: block;
+        height: 30rem;
+    }
+    .test {
+        display: block !important;
+    }
+    .col-Introduction {
+        width: 100%;
+    }
+    .col-photo {
+        width: 100%;
+        height: 50%;
     }
     .myname-title{
         text-align: center;
@@ -288,16 +574,82 @@ li{
     .myname-fast-description{
         padding-top: 10%;
     }
+    /*Section About me*/
+    
+
+    /*Section Work area*/
+    .workArea-title {
+        text-align: center;
+    }
+
+    /*Section Skills*/
+    .skills_wrap{
+        text-align: center;
+    }
     .soft-skills-container, .hard-skills-container {
         text-align: initial;
     }
+    .font-skills {
+        font-size: 17px;
+    }
+
+    /*Section Languages*/
     .popup {
         width: 42%;
     }
-    .studies_wrap {
-        padding-top: 1%;
-        padding-bottom: 3%;
+
+    /*Section Work Experience*/
+    .work-experience_wrap{
+        padding: 40px 0 40px;
     }
+    .workExp-title {
+        text-align: center;
+    }
+    .mobile-row{
+        display: block !important;
+        margin:0% 2% !important;
+    }
+    .experience_single_item:hover {
+        text-align: justify;
+    }
+
+    /*Section studies*/
+    .studies_wrap {
+        padding: 40px 0 40px;
+    }
+
+    /*Section Certifications*/
+    .certifications_wrap {
+        padding: 40px 0 40px;
+    }
+    .font-certifications_title {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    /*Section projects*/
+    .projects_wrap{
+        padding: 40px 0 40px;
+    }
+    .projects-title, .projects-description {
+        text-align: center;
+    }
+    /*Section contact*/
+    .contact_wrap{
+        padding: 40px 0 40px;
+    }
+    .con_info_menu {
+        margin-left: -25px;
+    }
+    .correo, .telefono, .linkedin {
+        font-size: 17px;
+    }
+
+    /*Section footer*/
+    .footer_wrap{
+        padding: 40px 0 40px;
+    }
+
     .about-title {
         text-align: center;
     }
